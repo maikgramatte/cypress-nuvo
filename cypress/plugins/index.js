@@ -14,14 +14,4 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-
-  on('window:before:load', (win) => {
-    console.log('Foo');
-    win.ga = cy.stub().as('ga');
-    window.localStorage.setItem('REACT_APP_OVERWRITES', JSON.stringify({
-      'app-qa-mode': 'dev',
-      'accessibility-value': true,
-      'accessibility-capture':  false,
-    }));
-  });
 }

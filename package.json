@@ -4,6 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^3.7.0"
+    "cypress": "3.8.0"
+  },
+  "scripts": {
+    "test": "cypress open",
+    "local-test": "cypress open --config-file cypress.local.json"
   }
 }

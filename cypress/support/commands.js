@@ -12,8 +12,6 @@
 // cy.openBranch();
 // cy.openBranch('/watch/notfilm');
 Cypress.Commands.add("openBranch", (path = '/', ip = Cypress.env('ipPublic'), cc = 'us') => {
-  cy.visit(`${Cypress.env('branch')}${path}`);
-
   // clear storage
   window.sessionStorage.clear();
   window.localStorage.clear();
@@ -26,6 +24,8 @@ Cypress.Commands.add("openBranch", (path = '/', ip = Cypress.env('ipPublic'), cc
     'accessibility-value': true,
     'accessibility-capture':  false,
   }));
+
+  cy.visit(`${Cypress.env('branch')}${path}`);
 });
 
 //

@@ -1,12 +1,13 @@
 {
-  "defaultCommandTimeout": 4000,
+  "defaultCommandTimeout": 8000,
+  "chromeWebSecurity": false,
   "pageLoadTimeout": 30000,
   "blacklistHosts": [
     "*google-analytics.com",
     "*consent.truste.com"
   ],
   "env": {
-    "branch": "https://d5hbq6qsug.execute-api.us-east-1.amazonaws.com/dev",
+    "branch": "https://t7nhougu1i.execute-api.us-east-1.amazonaws.com/dev",
     "ipPublic": "12.12.12.12",
     "ipInternal": "50.202.243.2"
   }
