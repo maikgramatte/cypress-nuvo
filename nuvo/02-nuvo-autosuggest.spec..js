@@ -17,20 +17,28 @@ context('Header Menu', () => {
   });
 
   it('should find input and search for BBC', () => {
+
+    // when I click search
     cy.get('#header')
       .find('#search-input')
       .focus()
       .type('BB')
       .wait(4000)
+
+      // then I should not see any suggestions
       .then(() => {
         cy.get('.react-autosuggest__container').then(($el) => {
           expect($el).to.not.have.class('react-autosuggest__container--open');
         });
       })
+
+
+      // when I search for "BBC"
       .get('#search-input')
       .focus()
       .type('C')
       .then(() => {
+        // then I should see channels
         cy.get('.react-autosuggest__container--open').then(() => {
           // Videos
           cy.get('.react-autosuggest__section-container--first li')

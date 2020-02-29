@@ -9,6 +9,8 @@
 // ***********************************************
 //
 
+import {Given} from 'cucumber';
+
 // cy.openBranch();
 // cy.openBranch('/watch/notfilm');
 Cypress.Commands.add("openBranch", (path = '/', ip = Cypress.env('ipPublic'), cc = 'us') => {
@@ -26,6 +28,17 @@ Cypress.Commands.add("openBranch", (path = '/', ip = Cypress.env('ipPublic'), cc
   }));
 
   cy.visit(`${Cypress.env('branch')}${path}`);
+});
+
+Cypress.Commands.add('openSessionDetails', () => {
+  cy.get('#header')
+      .wait(1000)
+      .then(() => {
+        cy.get('body')
+            .type('{esc}')
+            .type('{esc}')
+            .type('{esc}')
+      });
 });
 
 //
