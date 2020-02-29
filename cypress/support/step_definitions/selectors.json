@@ -1,0 +1,14 @@
+{
+  "search": "#search-input",
+  "search count": ".search-count",
+  "search filters": ".search-header-bar__filter",
+  "filter options": "*[class~=facet-group]",
+  "filter option": "*[class~=facet-group]",
+  "filter value": "*[class~=facet-item]:first-child",
+  "first filter value": "*[class~=facet-item]:first-child",
+  "first facet item": ".facet-item-row:first-child",
+  "subject filter": "*[class~=facet-group]:first-child label",
+  "current filter": "*[class~=facet-group]:focus-within",
+  "Institution Name": "dd[data-id=institutionName]",
+  "Country Code": "dd[data-id=ipCountryCode]"
+}

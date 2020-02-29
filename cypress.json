@@ -9,6 +9,10 @@
   "env": {
     "branch": "https://t7nhougu1i.execute-api.us-east-1.amazonaws.com/dev",
     "ipPublic": "12.12.12.12",
-    "ipInternal": "50.202.243.2"
+    "ipInternal": "50.202.243.2",
+    "ips": {
+      "public": "12.12.12.12",
+      "private": "50.202.243.2"
+    }
   }
 }
