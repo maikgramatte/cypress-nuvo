@@ -4,10 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "3.8.0"
+    "cypress": "3.8.0",
+    "picklejs": "^0.101.0"
   },
   "scripts": {
     "test": "cypress open",
     "local-test": "cypress open --config-file cypress.local.json"
-  }
+  },
+  "description": "`yarn run cypress open`",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maikgramatte/cypress-nuvo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/maikgramatte/cypress-nuvo/issues"
+  },
+  "homepage": "https://github.com/maikgramatte/cypress-nuvo#readme"
 }
